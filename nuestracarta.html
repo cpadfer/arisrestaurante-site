@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bienvenidos al ARIŚ</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            color: black;
+            align-items: center;
+            background: none;
+        }
+        header {
+            background-color: #002E5D;
+            padding: 0px 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 20px;
+            width: 100%;
+        }
+        .nav-links {
+            display: flex;
+            gap: 10px;
+        }
+        .nav-links a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            font-size: 18px;
+            padding: 5px 10px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+        .nav-links a:hover {
+            background-color: rgba(255, 255, 255, 0.2);
+        }
+        .logo-container {
+            display: flex;
+            justify-content: center;
+        }
+        .nav-links a.underline {
+            text-decoration: underline;
+        }
+        .logo-container {
+            display: flex;
+            justify-content: center;
+        }
+        .logo {
+            max-width: 150px;
+        }
+        .menu-section {
+            margin: 150px;
+        }
+        .menu-section h2 {
+            background-color: #002E5D;
+            color: white;
+            padding: 10px;
+            border-radius: 5px;
+        }
+        .menu-section ul {
+            list-style: none;
+            padding: 0;
+        }
+        .menu-section li {
+            margin: 10px 0;
+        }
+        .menu-section a {
+            text-decoration: none;
+            color: #002E5D;
+            font-weight: bold;
+        }
+        footer {
+            background-color: #002E5D;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            width: 100%;
+            position: relative;
+            bottom: 0;
+            margin-top: auto;
+        }
+
+        .footer-content {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        .footer-column {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .footer-item {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .footer-item img {
+            width: 40px;
+            height: 40px;
+        }
+
+        .footer-bottom {
+            width: 100%;
+            text-align: center;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="nav-links">
+            <a href="inicio.html" class="underline">Inicio</a>
+            <a href="MisiónvisiónyValores.html" class="underline">Misión, Visión y Valores</a>
+        </nav>
+        <div class="logo-container">
+            <img src="imagenes/logoaris.png" alt="Logo del Restaurante" class="logo">
+        </div>
+        <nav class="nav-links">
+            <a href="nuestracarta.html" class="underline">Nuestra Carta</a>
+            <a href="contacto.html" class="underline">Contacto</a>
+        </nav>
+    </header>
+    
+    <section class="menu-section">
+        <h2>Nuestra Carta</h2>
+        <ul>
+            <li><a href="https://drive.google.com/file/d/1bsc7bbBgTdf2m7W8V1B5tUwT_atvvc5v/view?usp=drive_link" target="_blank">Proteína, Batidos, Yogurt y Ensaladas</a></li>
+            <li><a href="https://drive.google.com/file/d/1o9GHIDu5vAIRbw5Ak86vC4V3fwa0oqTx/view?usp=drive_link" target="_blank">Batidos de Açaí y Guaraná</a></li>
+            <li><a href="https://drive.google.com/file/d/1mzkVftQrYm0jlsIZEzzZT9QPDrA9QfIg/view?usp=drive_link" target="_blank">Desayunos y Bebidas Calientes</a></li>
+            <li><a href="https://drive.google.com/file/d/1oi_cmGlVJAW65w09jCYFweUwn-rEj_Gc/view?usp=drive_link" target="_blank">Jugos con Guaraná</a></li>
+            <li><a href="https://drive.google.com/file/d/1VVMcV6bGDFDsqxYLYxHfdngT29YuTKIb/view?usp=drive_link" target="_blank">Hot Dog y Sándwiches Fríos</a></li>
+            <li><a href="https://drive.google.com/file/d/1vmO3W_BaP0U-8SpGPy4v_zPPtKDHIbb0/view?usp=drive_link" target="_blank">Combos Ari's y Hamburguesas</a></li>
+            <li><a href="https://drive.google.com/file/d/1-U_8Pqjv9A6lHi1QBCRGSXE1B4_ve7ny/view?usp=drive_link" target="_blank">Menús y Entradas</a></li>
+            <li><a href="https://drive.google.com/file/d/1TIoTxCWM6p4JpIhnY-FY0lpZsButEC7K/view?usp=drive_link" target="_blank">Comidas Regionales, Criollas y Piqueos</a></li>
+            <li><a href="https://drive.google.com/file/d/174rW270pQOL8l-b9aY7KMM5_8AzMjlLe/view?usp=drive_link" target="_blank">Otros Platos y Platos Sugeridos</a></li>
+            <li><a href="https://drive.google.com/file/d/118lfsX9ry8wKhC9oJxFK0gPatMc8nyE7/view?usp=drive_link" target="_blank">Platos de Fácil Digestión, Súper S y Vegetarianos</a></li>
+            <li><a href="https://drive.google.com/file/d/1LvcpKYBSTwIkTp9KS4VIRTXY6zlu-Nmr/view?usp=drive_link" target="_blank">Gamitana a la Parrilla, Brochetas y Coco</a></li>
+            <li><a href="https://drive.google.com/file/d/1m_jjJR9K8EKUgiUuSr87EbREothd0gfW/view?usp=drive_link" target="_blank">Paiche a los 4 Quesos, Salchipapas, Bife Ancho y Menú Criollo</a></li>
+            <li><a href="https://drive.google.com/file/d/1Ov6eDzbWq2dCKMdrStU3zsbRfAmGX1QA/view?usp=drive_link" target="_blank">Postres</a></li>
+            <li><a href="https://drive.google.com/file/d/1sgN7T2sDxSsPYCIgtSUj11NhQgv-o83F/view?usp=drive_link" target="_blank">Cervezas, Vinos y Afrodisíacos</a></li>
+        </ul>
+    </section>
+    
+    <footer>
+        <div class="footer-content">
+            <div class="footer-column">
+                <h2>Contáctanos</h2>
+                <div class="footer-item">
+                    <img src="imagenes/phone-call.png" alt="Teléfono">
+                    <p>(065) 23-14-70</p>
+                </div>
+                <div class="footer-item">
+                    <img src="imagenes/phone-call.png" alt="Teléfono">
+                    <p>(065) 23-14-77</p>
+                </div>
+                <div class="footer-item">
+                    <img src="imagenes/phone-call.png" alt="Teléfono">
+                    <p>(065) 22-12-15</p>
+                </div>
+            </div>
+            <div class="footer-column">
+                <h2>Horario y Ubicación</h2>
+                <div class="footer-item">
+                    <img src="imagenes/food.png" alt="Horario">
+                    <p>Lunes - Domingo: 9:00 AM - 10:00 PM</p>
+                </div>
+                <div class="footer-item">
+                    <img src="imagenes/icoubica.png" alt="Ubicación">
+                    <p>Jr. Próspero 127 - Iquitos</p>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>Todos los derechos reservados © 2025 Ari's Burger</p>
+        </div>
+    </footer>
+</body>
+</html>
