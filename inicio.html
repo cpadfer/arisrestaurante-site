@@ -3,7 +3,6 @@
 
 <head>
     <meta charset="UTF-8">
-    <base href="https://tu-usuario.github.io/tu-repo/">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bienvenidos al ARIŚ</title>
     <style>
@@ -54,8 +53,83 @@
             text-decoration: underline;
         }
 
+        .logo-container {}
+
         .logo {
             max-width: 100px;
+        }
+
+        section {
+            padding: 20px;
+        }
+
+        .menu {
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 20px;
+            border-radius: 10px;
+            margin-top: 20px;
+        }
+
+        .menu button {
+            background-color: #002E5D;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s ease;
+        }
+
+        .menu button:hover {
+            background-color: #001a38;
+        }
+
+        .contacto {
+            background-color: #002E5D;
+            color: white;
+            padding: 20px;
+            width: 100%;
+            margin-top: auto;
+        }
+
+        .telefonos {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+        }
+
+        .contenedor-principal {
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            margin-top: 0px;
+            padding-right: 0px;
+        }
+
+        .borde-rectangular {
+            color: white;
+            border: 1px solid #002E5D;
+            width: 30%;
+            height: auto;
+            margin: 0px;
+            margin-top: -850px;
+            padding: 60px;
+            background-color: rgba(11, 29, 128, 0.8);
+            text-align: center;
+            border-radius: 10px;
+        }
+
+        .borde-rectangular img {
+            max-width: 200px;
+            margin: 20px auto;
+        }
+
+        .imagen-restaurante {
+            width: 65%;
+            height: auto;
+            object-fit: cover;
+            border-radius: 10px;
         }
 
         .bandera {
@@ -85,6 +159,36 @@
             font-weight: bold;
             text-shadow: 4px 4px 6px rgba(0, 0, 0, 0.7);
             text-transform: uppercase;
+        }
+
+        /* Estilos para la imagen "desaloret" y su texto adicional */
+        .imagen-desaloret {
+            position: relative;
+        }
+
+        .texto-desaloret {
+            position: absolute;
+            bottom: 10px;
+            left: 40%;
+            transform: translateX(-50%);
+            color: red;
+            font-size: small;
+            margin: 90px;
+        }
+
+        /* Estilos para la imagen "polloalabrasa" y su texto adicional */
+        .imagen-pollosalabrasa {
+            position: relative;
+        }
+
+        .texto-pollosalabrasa {
+            position: absolute;
+            bottom: 10px;
+            left: 45%;
+            transform: translateX(-50%);
+            color: red;
+            font-size: small;
+            margin: 80px;
         }
 
         footer {
@@ -146,7 +250,7 @@
     <div class="bandera">
         <div class="bandera-texto">Bienvenidos al Aris</div>
         <div class="imagen-desaloret" style="background-image: url('imagenes/desaloret.jpg');">
-            <p class="texto-desaloret">Disfruta de nuestros exquisitos platos de nuestra región, nacionales e internacionales.</p>
+            <p class="texto-desaloret">Disfruta de nuestros exquisitos platos de nuestra region, nacionales e internacionales.</p>
         </div>
         <div style="background-image: url('imagenes/salon0.jpg');"></div>
         <div class="imagen-pollosalabrasa" style="background-image: url('imagenes/polloalabrza.jpg');">
