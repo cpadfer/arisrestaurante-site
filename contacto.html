@@ -11,7 +11,7 @@
         }
 
         body {
-            font-family: Arial, sans-serif;
+            font-family: Arial, Helvetica, sans-serif;
             margin: 0;
             padding: 0;
             text-align: center;
@@ -20,11 +20,10 @@
             min-height: 100vh;
             color: black;
             align-items: center;
-            background-image: url("imagenes/HELADOS GIORNATTA 024_edited.jpg");
-            background-size: cover;
-            background-position: center;
-            background-attachment: fixed;
-            background-color: transparent;
+            background: #FFFFFF; /* White background as requested */
+            /* Suggestion: For a subtle gradient, try:
+               background: linear-gradient(to bottom, #ffffff, #f5f5f5);
+            */
         }
 
         header {
@@ -73,44 +72,56 @@
         }
 
         main {
-            padding: 15px;
-            margin: 15px;
+            padding: 20px;
+            margin: 20px;
             border-radius: 10px;
             flex-grow: 1;
             width: 100%;
             max-width: 800px;
             background: transparent;
+            display: block;
+            overflow: visible;
+            /* Suggestion: For a card-like effect, try:
+               box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            */
         }
 
         .imagen-ajustable {
             width: 100%;
             max-width: 500px;
             border-radius: 10px;
-            margin: 15px auto;
+            margin: 20px auto;
             display: block;
             object-fit: cover;
             background: transparent;
         }
 
         main h1 {
-            font-size: 1.8em;
-            margin: 15px 0;
-            color: white; /* Improved contrast against background */
+            font-size: 2em;
+            margin: 20px 0;
+            color: #000; /* Black text */
+            font-weight: 600;
         }
 
         main p {
-            font-size: 1em;
-            margin: 8px 0;
+            font-size: 1.1em;
+            margin: 10px 0;
             display: flex;
             align-items: center;
             justify-content: center;
-            gap: 8px;
-            color: white; /* Improved contrast */
+            gap: 10px;
+            color: #000; /* Black text */
         }
 
         main p img {
-            width: 18px;
-            height: 18px;
+            width: 20px;
+            height: 20px;
+            vertical-align: middle;
+            transition: transform 0.2s ease;
+        }
+
+        main p img:hover {
+            transform: scale(1.2); /* Suggestion: Hover effect for icons */
         }
 
         iframe {
@@ -119,7 +130,7 @@
             height: 350px;
             border: 0;
             border-radius: 10px;
-            margin: 15px auto;
+            margin: 20px auto;
             display: block;
         }
 
@@ -172,14 +183,14 @@
                 max-width: 150px;
             }
             main h1 {
-                font-size: 2em;
+                font-size: 2.2em;
             }
             main p {
-                font-size: 1.1em;
+                font-size: 1.2em;
             }
             main p img {
-                width: 20px;
-                height: 20px;
+                width: 22px;
+                height: 22px;
             }
             .imagen-ajustable {
                 max-width: 600px;
@@ -198,10 +209,10 @@
                 max-width: 130px;
             }
             main h1 {
-                font-size: 1.9em;
+                font-size: 2em;
             }
             main p {
-                font-size: 1em;
+                font-size: 1.1em;
             }
             .imagen-ajustable {
                 max-width: 500px;
@@ -231,21 +242,21 @@
                 max-width: 110px;
             }
             main {
-                padding: 12px;
-                margin: 12px;
+                padding: 15px;
+                margin: 15px;
             }
             .imagen-ajustable {
                 max-width: 400px;
             }
             main h1 {
-                font-size: 1.6em;
+                font-size: 1.8em;
             }
             main p {
-                font-size: 0.95em;
+                font-size: 1em;
             }
             main p img {
-                width: 16px;
-                height: 16px;
+                width: 18px;
+                height: 18px;
             }
             iframe {
                 height: 300px;
@@ -278,21 +289,21 @@
                 max-width: 100px;
             }
             main {
-                padding: 10px;
-                margin: 10px;
+                padding: 12px;
+                margin: 12px;
             }
             .imagen-ajustable {
                 max-width: 100%;
             }
             main h1 {
-                font-size: 1.5em;
+                font-size: 1.6em;
             }
             main p {
-                font-size: 0.9em;
+                font-size: 0.95em;
             }
             main p img {
-                width: 15px;
-                height: 15px;
+                width: 16px;
+                height: 16px;
             }
             iframe {
                 height: 250px;
@@ -318,10 +329,10 @@
                 max-width: 90px;
             }
             main h1 {
-                font-size: 1.4em;
+                font-size: 1.5em;
             }
             main p {
-                font-size: 0.85em;
+                font-size: 0.9em;
             }
             main p img {
                 width: 14px;
