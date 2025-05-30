@@ -24,11 +24,12 @@
 
         header {
             background-color: #002E5D;
-            padding: 10px 0;
+            /* ajusta exactamente la imagen logo con el tamaño del encabezado */
+            padding: 0px 0;
             display: flex;
             align-items: center;
             justify-content: center;
-            gap: 10px;
+            gap: 8px;
             width: 100%;
             flex-wrap: wrap;
         }
@@ -154,8 +155,10 @@
         @media (min-width: 768px) {
             .nav-links a {
                 font-size: 18px;
+                /* junta a las letras del menu del encabezado */
                 padding: 5px 10px;
             }
+            /* agranda la imagen del logo del encabezado */
             .logo {
                 max-width: 150px;
             }
@@ -251,13 +254,14 @@
 </head>
 <body>
     <header>
+        <div class="logo-container">
+            <img src="imagenes/logoaris.png" alt="Logo del Restaurante" class="logo">
+        </div>
         <nav class="nav-links">
             <a href="index.html" class="underline">Inicio</a>
             <a href="MisiónvisiónyValores.html" class="underline">Misión, Visión y Valores</a>
         </nav>
-        <div class="logo-container">
-            <img src="imagenes/logoaris.png" alt="Logo del Restaurante" class="logo">
-        </div>
+        
         <nav class="nav-links">
             <a href="nuestracarta.html" class="underline">Nuestra Carta</a>
             <a href="contacto.html" class="underline">Contacto</a>
