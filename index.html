@@ -1,19 +1,18 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bienvenidos al ARIŚ</title>
+    <title>Bienvenidos al ARI'S</title>
     <style>
         * {
             box-sizing: border-box;
         }
 
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
+        html, body {
+            margin: 0; /* Elimina márgenes predeterminados del navegador */
             padding: 0;
+            font-family: Arial, sans-serif;
             text-align: center;
             background-image: url("imagenes/salon1.jpg");
             background-size: cover;
@@ -21,17 +20,19 @@
             background-attachment: fixed;
             display: flex;
             flex-direction: column;
-            min-height: 100vh;
+            min-height: 100vh; /* Asegura que el body ocupe toda la altura */
         }
 
         header {
             background-color: #002E5D;
-            padding: 0px;
+            padding: 0;
+            margin: 0; /* Asegura que no haya espacio arriba */
             display: flex;
-            flex-wrap: wrap;
             align-items: center;
-            justify-content: space-between;
+            justify-content: center;
+            gap: 8px;
             width: 100%;
+            flex-wrap: wrap;
         }
 
         .nav-links {
@@ -45,7 +46,7 @@
             color: white;
             font-weight: bold;
             font-size: 18px;
-            padding: 5px 150px;
+            padding: 5px 8px;
             border-radius: 5px;
             transition: background-color 0.3s ease;
         }
@@ -104,7 +105,7 @@
             object-fit: cover;
             border-radius: 10px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-            order: 2; /* Coloca la imagen a la derecha */
+            order: 2;
         }
 
         .borde-rectangular {
@@ -122,7 +123,7 @@
             display: flex;
             flex-direction: column;
             justify-content: center;
-            order: 1; /* Coloca el borde a la izquierda */
+            order: 1;
         }
 
         .borde-rectangular img {
@@ -139,6 +140,41 @@
             font-size: 1em;
             line-height: 1.5;
             margin: 0;
+        }
+
+        .welcome-banner {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 20px;
+        }
+
+        .welcome-box {
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 20px;
+            border-radius: 10px;
+            margin: 20px;
+            width: 100%;
+            max-width: 5000px;
+            height: 150px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .welcome-text {
+            font-family: Arial, sans-serif;
+            font-size: 36px;
+            font-weight: bold;
+            color: red;
+            text-transform: uppercase;
+            text-shadow: 
+                2px 2px 0 #000,  
+                -2px -2px 0 #000,  
+                2px -2px 0 #000,  
+                -2px 2px 0 #000,
+                3px 3px 5px rgba(0, 0, 0, 0.5);
         }
 
         .bandera {
@@ -176,6 +212,8 @@
             text-align: center;
             padding: 20px 0;
             width: 100%;
+            margin-top: auto; /* Empuja el footer al final de la página */
+            margin-bottom: 0; /* Elimina cualquier espacio inferior */
         }
 
         .footer-content {
@@ -222,7 +260,7 @@
                 margin-right: 0;
             }
             .contenedor-principal {
-                flex-wrap: nowrap; /* Evita que los elementos se apilen en pantallas grandes */
+                flex-wrap: nowrap;
             }
         }
 
@@ -230,34 +268,47 @@
             .imagen-restaurante, .borde-rectangular {
                 width: 100%;
                 height: 300px;
-                order: unset; /* Restablece el orden en móviles */
+                order: unset;
+            }
+            .welcome-box {
+                width: 90%;
+                height: 120px;
+            }
+            .welcome-text {
+                font-size: 24px;
             }
         }
     </style>
 </head>
-
 <body>
     <header>
+        <img src="https://cpadfer.github.io/arisrestaurante-site/imagenes/logoaris.png" alt="Logo del Restaurante" class="logo">
         <nav class="nav-links">
             <a href="index.html" class="underline">Inicio</a>
             <a href="MisiónvisiónyValores.html" class="underline">Misión, Visión y Valores</a>
         </nav>
-        <img src="https://cpadfer.github.io/arisrestaurante-site/imagenes/logoaris.png" alt="Logo del Restaurante" class="logo">
+        
         <nav class="nav-links">
             <a href="nuestracarta.html" class="underline">Nuestra Carta</a>
             <a href="contacto.html" class="underline">Contacto</a>
         </nav>
     </header>
 
+    <div class="welcome-banner">
+        <div class="welcome-box">
+            <span class="welcome-text">Bienvenidos al Ari's</span>
+        </div>
+    </div>
+
     <div class="bandera">
         <div style="background-image: url('imagenes/desaloret.jpg');">
-            <p class="texto-desaloret">Platos regionales, nacionales e internacionales</p>
+            <p class="texto-desaloret">Disfruta de nuestras variedades de platos: regionales, nacionales e internacionales.</p>
         </div>
         <div style="background-image: url('imagenes/salon0.jpg');">
-            <p class="bandera-texto">Bienvenidos al Aris</p>
+            <p class="bandera-texto">Disfruta de un ambiente cálido y familiar, donde cada rincón está lleno de sabor y tradición.</p>
         </div>
         <div style="background-image: url('imagenes/polloalabrza.jpg');">
-            <p class="texto-pollosalabrasa">Delicioso pollo a la brasa</p>
+            <p class="texto-pollosalabrasa">Déjate conquistar por nuestro delicioso pollo a la brasa.</p>
         </div>
     </div>
 
@@ -265,7 +316,7 @@
         <div class="borde-rectangular">
             <img src="https://cpadfer.github.io/arisrestaurante-site/imagenes/logoaris.png" alt="Logo del Restaurante">
             <h2>Sobre Nosotros</h2>
-            <p>"Ubicados en el corazón de Iquitos, frente a la emblemática Plaza de Armas, somos una empresa loretana con historia. Desde los años 80, deleitamos a nuestros clientes con una exquisita variedad de platos de nuestra región, nacionales e internacionales. Nos enorgullece ofrecer productos de calidad, atención cálida y un sabor que conquista generaciones."</p>
+            <p>"Estamos ubicados en el corazón de Iquitos, frente a la emblemática Plaza de Armas, somos una empresa loretana con historia. Desde los años 80, deleitamos a nuestros clientes con una exquisita variedad de platos de nuestra región, nacionales e internacionales. Nos enorgullece ofrecer productos de calidad, atención cálida y un sabor que conquista generaciones."</p>
         </div>
         <img src="imagenes/fachada0.jpg" alt="Restaurante ARIS" class="imagen-restaurante">
     </div>
@@ -309,5 +360,4 @@
         </div>
     </footer>
 </body>
-
 </html>
